@@ -139,3 +139,4 @@ export function createApp(repository = { findRecipe, listRecipes, saveRecipe }) 
 }
 
 export const app = createApp();
+export default app;
