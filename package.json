@@ -1,0 +1,23 @@
+{
+  "name": "ongi-recipe-book",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test",
+    "db:migrate": "node scripts/migrate.js",
+    "db:seed": "node scripts/seed.js",
+    "data:import": "node scripts/import-sqlite.js",
+    "data:import:check": "node scripts/import-sqlite.js --check"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.2",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0"
+  }
+}
